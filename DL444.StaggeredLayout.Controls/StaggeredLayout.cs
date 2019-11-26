@@ -65,32 +65,32 @@ namespace DL444.StaggeredLayout.Controls
         /// <summary>
         /// Represents the HorizontalAlignment property.
         /// </summary>
-        public static readonly DependencyProperty HorizontalAlignmentProperty =
-            DependencyProperty.Register("HorizontalAlignment", typeof(HorizontalAlignment), typeof(StaggeredLayout), new PropertyMetadata(default(HorizontalAlignment), OnLayoutPropertyChanged));
+        public static DependencyProperty HorizontalAlignmentProperty { get; } 
+            = DependencyProperty.Register("HorizontalAlignment", typeof(HorizontalAlignment), typeof(StaggeredLayout), new PropertyMetadata(default(HorizontalAlignment), OnLayoutPropertyChanged));
 
         /// <summary>
         /// Represents the RowSpacing property.
         /// </summary>
-        public static readonly DependencyProperty RowSpacingProperty =
-            DependencyProperty.Register("RowSpacing", typeof(double), typeof(StaggeredLayout), new PropertyMetadata(0.0, OnLayoutPropertyChanged));
+        public static DependencyProperty RowSpacingProperty { get; } 
+            = DependencyProperty.Register("RowSpacing", typeof(double), typeof(StaggeredLayout), new PropertyMetadata(0.0, OnLayoutPropertyChanged));
 
         /// <summary>
         /// Represents the ColumnSpacing property.
         /// </summary>
-        public static readonly DependencyProperty ColumnSpacingProperty =
-            DependencyProperty.Register("ColumnSpacing", typeof(double), typeof(StaggeredLayout), new PropertyMetadata(0.0, OnLayoutPropertyChanged));
+        public static DependencyProperty ColumnSpacingProperty { get; } 
+            = DependencyProperty.Register("ColumnSpacing", typeof(double), typeof(StaggeredLayout), new PropertyMetadata(0.0, OnLayoutPropertyChanged));
 
         /// <summary>
         /// Represents the DesireColumnWidth property.
         /// </summary>
-        public static readonly DependencyProperty DesiredColumnWidthProperty =
-            DependencyProperty.Register("DesiredColumnWidth", typeof(double), typeof(StaggeredLayout), new PropertyMetadata(250.0, OnLayoutPropertyChanged));
+        public static DependencyProperty DesiredColumnWidthProperty { get; } 
+            = DependencyProperty.Register("DesiredColumnWidth", typeof(double), typeof(StaggeredLayout), new PropertyMetadata(250.0, OnLayoutPropertyChanged));
 
         /// <summary>
         /// Represents the Padding property.
         /// </summary>
-        public static readonly DependencyProperty PaddingProperty =
-            DependencyProperty.Register("Padding", typeof(Thickness), typeof(StaggeredLayout), new PropertyMetadata(default(Thickness), OnLayoutPropertyChanged));
+        public static DependencyProperty PaddingProperty { get; } 
+            = DependencyProperty.Register("Padding", typeof(Thickness), typeof(StaggeredLayout), new PropertyMetadata(default(Thickness), OnLayoutPropertyChanged));
         #endregion
 
         protected override Size MeasureOverride(VirtualizingLayoutContext context, Size availableSize)
