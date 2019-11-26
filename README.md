@@ -4,7 +4,9 @@ It is intended to be used with [ItemsRepeater](https://docs.microsoft.com/en-us/
 
 This control is available on [nuget.org](https://www.nuget.org/packages/DL444.StaggeredLayout.Controls).
 
-![Screenshot](https://github.com/DL444/DL444.StaggeredLayout/blob/master/Misc/Staggered-Complete.jpg?raw=true)
+![Screenshot](https://github.com/DL444/DL444.StaggeredLayout/blob/master/Misc/Staggered-Complete.jpg?raw=true)  
+
+[Sample](https://github.com/DL444/DL444.StaggeredLayout.Demo)
 
 ## Install
 In your **Package Manager Console**:
